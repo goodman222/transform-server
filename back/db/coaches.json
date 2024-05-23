@@ -1,0 +1,71 @@
+[
+  {
+    "imgURL": "./src/assets/img/Coaches/1.jpg",
+    "name": "Кристина",
+    "position": "Тренер и нутрицолог",
+    "characteristics": [
+      {
+        "value": "Дипломированный специалист в области интегративной медицины",
+        "isEdited": false,
+        "id": 0
+      },
+      {
+        "value": "Тренер групповых программ",
+        "isEdited": false,
+        "id": 1
+      },
+      {
+        "value": "Член национального общества диетологов РФ",
+        "isEdited": false,
+        "id": 2
+      },
+      {
+        "value": "Тренер тренажерного зала",
+        "isEdited": false,
+        "id": 3
+      },
+      {
+        "value": "Инструктор Jumping",
+        "isEdited": false,
+        "id": 4
+      }
+    ],
+    "isEdited": false,
+    "id": 0
+  },
+
+  {
+    "imgURL": "./src/assets/img/Coaches/2.jpg",
+    "name": "Екатерина",
+    "position": "Тренер и коуч",
+    "characteristics": [
+      {
+        "value": "Инструктор Jumping",
+        "isEdited": false,
+        "id": 0
+      },
+      {
+        "value": "Тренер тренажерного зала",
+        "isEdited": false,
+        "id": 1
+      },
+      {
+        "value": "Тренер групповых программ",
+        "isEdited": false,
+        "id": 2
+      },
+      {
+        "value": "Член национального общества диетологов РФ",
+        "isEdited": false,
+        "id": 3
+      },
+      {
+        "value": "Дипломированный специалист в области интегративной медицины",
+        "isEdited": false,
+        "id": 4
+      }
+    ],
+    "isEdited": false,
+    "id": 1
+  }
+]
