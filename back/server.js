@@ -1,6 +1,8 @@
 import express from "express";
 import ViteExpress from "vite-express";
 import nodemailer from "nodemailer";
+import * as path from 'path'
+
 // import bodyParser from "body-parser";
 
 const app = express();
@@ -16,14 +18,14 @@ async function sendEmail(data) {
     port: 465,
     secure: true,
     auth: {
-      user: "test34324@mail.ru",
+      user: "markhrabryi@mail.ru",
       pass: "s7rH4tRcfcr140G88bJY",
     },
   });
 
   let result = await transporter.sendMail({
     from: '"Трансформация" <markhrabryi@mail.ru>',
-    to: "postpoluchetel@gmail.com",
+    to: "mark.hrabryi90@gmail.com",
     subject: "Новая заявка с сайта",
     html: data,
   });
@@ -68,7 +70,7 @@ import multer from "multer";
 //Сохраняем изменения -----------------------------------------------------
 app.post("/saveChanges", async (req, res) => {
   fs.writeFile(
-    `./back/db/${req.body.fileName}.json`,
+    `db/${req.body.fileName}.json`,
     JSON.stringify(req.body.data),
     (err) => {
       if (err) {
@@ -84,7 +86,7 @@ app.post("/saveChanges", async (req, res) => {
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "./back/images");
+    cb(null, "db/images");
   },
 
   filename: (req, file, cb) => {
