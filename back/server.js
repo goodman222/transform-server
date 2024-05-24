@@ -86,7 +86,7 @@ app.post("/saveChanges", async (req, res) => {
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "db/images");
+    cb(null, "images");
   },
 
   filename: (req, file, cb) => {
